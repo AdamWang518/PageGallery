@@ -1,0 +1,24 @@
+.paint-container {
+  display: inline-block;
+}
+
+.draw-image {
+  height: 200px;
+}
+
+.paint-discribe-conatiner {
+  display: block;
+}
+
+.paint-discribe-conatiner {
+  background-color: #F2F2F2;
+  height: 100%;
+}
+
+.padsetter {
+  padding: 0px;
+}
+
+.image-bottom {
+  background-color: #FFFFFF;
+}

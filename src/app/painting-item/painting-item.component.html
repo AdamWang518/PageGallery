@@ -1,0 +1,13 @@
+<div class="row mt-5">
+  <div class="col-md-2 col-6 padsetter image-bottom">
+    <img class="img-fluid" src={{this.inputDrawItem.imageLink}}>
+  </div>
+  <div class="col-md-6 col-6 padsetter">
+    <div class="paint-discribe-conatiner">
+      <p>畫名:{{this.inputDrawItem.drawName}}</p>
+      <p>作者名:{{this.inputDrawItem.artist}}</p>
+      <p>年分:{{this.inputDrawItem.startYear}} <span *ngIf="this.inputDrawItem.endYear!=''">~</span> {{this.inputDrawItem.endYear}}</p>
+      <p>屬性:{{this.inputDrawItem.attribute}}</p>
+    </div>
+  </div>
+</div>

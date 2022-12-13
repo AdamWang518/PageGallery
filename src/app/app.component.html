@@ -1,0 +1,15 @@
+<div class="icon-bar-container">
+  <app-icon-bar></app-icon-bar>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-12">
+      <app-search-bar></app-search-bar>
+    </div>
+    <div class="col-md-9 col-sm-12">
+      <div *ngFor="let draw of draws">
+        <app-painting-item [inputDrawItem]="draw"></app-painting-item>
+      </div>
+    </div>
+  </div>
+</div>
