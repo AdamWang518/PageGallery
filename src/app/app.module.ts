@@ -8,6 +8,7 @@ import { IconBarComponent } from './icon-bar/icon-bar.component';
 import { PaintingItemComponent } from './painting-item/painting-item.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
         IconBarComponent,
         PaintingItemComponent,
         SearchBarComponent,
+        PaginationComponent,
 
     ],
     providers: [],

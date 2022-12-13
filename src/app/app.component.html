@@ -7,9 +7,11 @@
       <app-search-bar></app-search-bar>
     </div>
     <div class="col-md-9 col-sm-12">
+      <app-pagination [pageInfo]="this.counts" (choosePage)="getChosen($event)"></app-pagination>
       <div *ngFor="let draw of draws">
         <app-painting-item [inputDrawItem]="draw"></app-painting-item>
       </div>
+      <div class="mt-5"></div>
     </div>
   </div>
 </div>

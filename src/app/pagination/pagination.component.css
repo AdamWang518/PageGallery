@@ -1,0 +1,35 @@
+.page-cube-container {
+    display: flex;
+}
+
+.page-cube {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    background-color: #FFFFFF;
+    text-align: center;
+    color: #4A90E2;
+    line-height: 40px;
+    transition: all 0.5s;
+    user-select: none;
+    /* standard syntax */
+    -webkit-user-select: none;
+    /* for Chrome、Safari */
+    -moz-user-select: none;
+    /* for Mozilla、Firefox */
+}
+
+.page-cube:hover {
+    opacity: 0.7;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.page-cube-active {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+}

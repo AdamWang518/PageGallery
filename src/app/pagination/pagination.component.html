@@ -1,0 +1,8 @@
+<div class="page-cube-container">
+    <div class="page-cube" (click)="previousPage()">
+      < </div>
+        <div *ngFor="let number of page" (click)="pageChoose(number)" class="page-cube"
+          [ngClass]="number==pageIndex ? 'page-cube-active':''">{{number}}</div>
+        <div class="page-cube" (click)="nextPage()">></div>
+
+  </div>

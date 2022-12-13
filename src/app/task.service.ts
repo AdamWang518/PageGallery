@@ -10,6 +10,6 @@ export class TaskService {
   subject = new Subject<searchInfo>();
   constructor(private http: HttpClient) { }
   selectGallery(Info:searchInfo){
-    return this.http.get<any>(`https://localhost:44374/getGallery?artist=${Info.artist}&name=${Info.name}&attribute=${Info.attribute}&year=${Info.century}`);
+    return this.http.get<any>(`https://localhost:44374/getGallery?artist=${Info.artist}&name=${Info.name}&attribute=${Info.attribute}&year=${Info.century}&page=${Info.page}`);
   }
 }
