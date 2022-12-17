@@ -19,7 +19,8 @@ export class SearchBarComponent implements OnInit {
     this.pack.artist=this.artist;
     this.pack.name=this.name;
     this.pack.attribute=this.attribute;
-    this.pack.century=this.century.replace("世紀","");;
+    this.pack.century=this.century.replace("世紀","");
+    this.pack.page=1;
     this.service.subject.next(this.pack);
   }
   pack:searchInfo=new searchInfo();

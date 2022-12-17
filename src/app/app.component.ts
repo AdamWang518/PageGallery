@@ -20,6 +20,7 @@ export class AppComponent {
   pageGetter(pageIndex: number):void{
     let that = this;
     this.Info.page=pageIndex;
+    console.log(this.Info);
     this.service.selectGallery(this.Info).subscribe(data => {
       this.draws = [];
       data.data.forEach(function (value: any) {
@@ -38,7 +39,8 @@ export class AppComponent {
       this.Info=res;
       this.service.selectGallery(res).subscribe(data => {
         this.draws = [];
-        this.counts=data.counts;
+        this.counts=data.count;
+
         data.data.forEach(function (value: any) {
           that.draws.push(value);
         });

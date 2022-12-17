@@ -17,6 +17,7 @@ export class PaginationComponent {
   }
   ngOnChanges(changes: SimpleChanges) {
     this.totalCount = changes['pageInfo'].currentValue;
+    console.log(changes)
     this.pageSlicer(1);
   }
   ngOnInit(): void {
@@ -43,6 +44,8 @@ export class PaginationComponent {
     for (let start = lower; start <= upper; start++) {
       this.page.push(start);
     }
+    console.log(upper)
+    console.log(lower)
   }
   pageChoose(number: number) {
     this.pageIndex = number;
